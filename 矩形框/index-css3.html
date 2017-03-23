@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./js/jquery.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+
+<body>
+
+    <div id="container">
+        <i class="line-top"></i>
+        <i class="line-bottom"></i>
+        <i class="line-left"></i>
+        <i class="line-right"></i>
+    </div>
+    <script>
+        var $top = $(".line-top");
+        var $bottom = $(".line-bottom");
+        var $left = $(".line-left");
+        var $right = $(".line-right");
+        $("#container").hover(function() {
+            $top.stop().toggleClass("changewidth").removeClass("widthtozero");
+            $bottom.stop().toggleClass("changewidth").removeClass("widthtozero");
+            $left.stop().toggleClass("changeheight").removeClass("heighttozero");
+            $right.stop().toggleClass("changeheight").removeClass("heighttozero");
+        }, function() {
+            $top.stop().toggleClass("widthtozero").removeClass("changewidth");
+            $bottom.stop().toggleClass("widthtozero").removeClass("changewidth");
+            $left.stop().toggleClass("heighttozero").removeClass("changeheight");
+            $right.stop().toggleClass("heighttozero").removeClass("changeheight");
+        })
+    </script>
+</body>
+
+</html>

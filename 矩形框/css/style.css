@@ -1,0 +1,84 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#container {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    margin: 30px auto;
+    background: #abc;
+}
+
+.line-top {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 3px;
+    background: #00f;
+}
+
+.line-right {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 3px;
+    height: 0px;
+    background: #00f;
+}
+
+.line-left {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 3px;
+    height: 0px;
+    background: #00f;
+}
+
+.line-bottom {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 0px;
+    height: 3px;
+    background: #00f;
+}
+
+.changeheight {
+    height: 500px;
+    -webkit-transition: height .5s linear;
+    -o-transition: height .5s linear;
+    -moz-transition: height .5s linear;
+    -ms-transition: height .5s linear;
+    transition: height .5s linear;
+}
+
+.changewidth {
+    width: 300px;
+    -webkit-transition: width .5s linear;
+    -o-transition: width .5s linear;
+    -moz-transition: width .5s linear;
+    -ms-transition: width .5s linear;
+    transition: width .5s linear;
+}
+
+.heighttozero {
+    height: 0px;
+    -webkit-transition: height .5s linear;
+    -o-transition: height .5s linear;
+    -moz-transition: height .5s linear;
+    -ms-transition: height .5s linear;
+    transition: height .5s linear;
+}
+
+.widthtozero {
+    width: 0px;
+    -webkit-transition: width .5s linear;
+    -o-transition: width .5s linear;
+    -moz-transition: width .5s linear;
+    -ms-transition: width .5s linear;
+    transition: width .5s linear;
+}

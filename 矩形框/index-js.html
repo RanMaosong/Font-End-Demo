@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./js/jquery.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+
+<body>
+
+    <div id="container">
+        <i class="line-top"></i>
+        <i class="line-bottom"></i>
+        <i class="line-left"></i>
+        <i class="line-right"></i>
+    </div>
+    <script>
+        var $top = $(".line-top");
+        var $bottom = $(".line-bottom");
+        var $left = $(".line-left");
+        var $right = $(".line-right");
+        $("#container").hover(function() {
+            $top.stop().animate({width:"300px"}, 500);
+            $bottom.stop().animate({width:"300px"}, 500);
+            $left.stop().animate({height: "500px"}, 500);
+            $right.stop().animate({height: "500px"}, 500);
+            // $top.stop(true).animate({width:"300px"}, 500);
+            // $bottom.stop(true).animate({width:"300px"}, 500);
+            // $left.stop(true).animate({height: "500px"}, 500);
+            // $right.stop(true).animate({height: "500px"}, 500);
+        }, function() {
+            $top.stop().animate({width:"0px"}, 200);
+            $bottom.stop().animate({width:"0px"}, 200);
+            $left.stop().animate({height: "0px"}, 200);
+            $right.stop().animate({height: "0px"}, 200);
+            // $top.stop(true).animate({width:"0px"}, 200);
+            // $bottom.stop(true).animate({width:"0px"}, 200);
+            // $left.stop(true).animate({height: "0px"}, 200);
+            // $right.stop(true).animate({height: "0px"}, 200);
+        })
+    </script>
+</body>
+
+</html>

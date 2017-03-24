@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <style type="text/css" rel="styelsheet">
+            .box {
+                width: 500px;
+                margin: auto;
+                background: #abc;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+                <dl>
+                    <dt>默认</dt>
+                    <dd><marquee>这是默认行为</marquee></dd>
+                </dl>
+                <dl>
+                    <dt>向右</dt>
+                    <dd><marquee direction="right" scrolldelay="500">这是默认行为</marquee></dd>
+                    <dd><marquee direction="right" scrolldelay="500">我向右滚动。。。。</marquee></dd>
+                </dl>
+                <dl>
+                    <dt>滚动方式为ａｌｔｅｒｎａｔｅ，循环３次，速度为２</dt>
+                    <dd><marquee behavior="alternate" scrollamount="10" loop="3">这是默认行为</marquee></dd>
+                </dl>
+                <dl>
+                    <dt>滚动方式为ａｌｔｅｒｎａｔｅ，循环３次，速度为２</dt>
+                    <dd><marquee direction="up" bgcolor="#aaa" width="200px" height="200px" onmouseover="this.stop();" onmouseout="this.start();">这是默认行为</marquee></dd>
+                </dl>
+        </div>
+    </body>
+</html>

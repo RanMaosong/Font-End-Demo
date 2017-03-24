@@ -1,0 +1,82 @@
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.gray {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: #808080;
+}
+
+.dialog {
+    position: absolute;
+    left: 300px;
+    top: 300px;
+    width: 270px;
+    height: 170px;
+    background: #fff;
+    z-index: 10000;
+}
+
+.dialog .title {
+    height: 20px;
+    padding: 10px 15px;
+    background: #119dad;
+    font-size: 14px;
+    color: #fff;
+    cursor: move;
+}
+
+.dialog .title h3 {
+    float: left;
+}
+
+.dialog .title a {
+    float: right;
+    font-size: 18px;
+}
+
+.content {
+    height: 127px;
+    background: #fff;
+}
+
+.content .message {
+    height: 40px;
+    padding: 18px 40px;
+}
+
+.content .message .icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url("../images/dialog.png") no-repeat -151px -1px;
+    float: left;
+}
+
+.content .message .text {
+    font-size: 14px;
+    color: #999;
+    margin: 12px 0 0 14px;
+    float: left;
+}
+
+.btn {
+    text-align: center;
+}
+
+.btn input {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #119da9;
+    background: #fff;
+}
+
+.btn input:hover {
+    background: #ccc;
+}

@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a.btn {
+    width: 200px;
+    height: 40px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    background: #6699ff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 10px;
+}

@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #333;
+}
+
+
+.container ul {
+    width: 1000px;
+    height: 280px;
+    margin: 50px auto;
+    list-style: none;
+}
+
+.container .link {
+    width: 210px;
+    height: 280px;
+    margin: 0 20px;
+    float: left;
+}
+
+.link .icon {
+    display: block;
+    width: 174px;
+    height: 155px;
+    margin: 0 auto;
+
+    transition: all 0.3s linear;
+}
+.link-mission .icon {
+    background: url("../images/mission.png") no-repeat center center;
+}
+.link-play .icon {
+    background: url("../images/play.png") no-repeat center center;
+}
+.link-touch .icon {
+    background: url("../images/touch.png") no-repeat center center;
+}
+
+/*
+    鼠标放在图标上，图片旋转360读同时放大1.2倍
+*/
+
+.link .icon:hover {
+    transform: rotate(360deg) scale(1.2);
+}
+
+
+.link .btn {
+    display: block;
+    text-decoration: none;
+    position: relative;
+    width:  170px;
+    height: 45px;
+    line-height: 45px;
+    margin: 20px auto;
+    padding-left: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    font-size: 18px;
+    color:#2dcb70;
+    font-weight: bolder;
+    font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+    background: url("../images/allow.png") no-repeat 140px;
+    transition: all 0.2s linear;
+}
+
+.link .btn:hover {
+    border: 2px solid rgba(255, 255, 255, 1);
+    background-position: 155px;
+}
+
+
+/*
+    4条边框动画先
+*/
+.btn .line {
+    position: absolute;
+    display: block;
+    background: #fff;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+/*
+    上边的线动画：高不变， left改变
+*/
+.btn .line-top {
+    top:-2px;
+    left: -90%;
+    width: 0px;
+    height: 2px;  
+}
+
+
+
+.btn:hover .line-top {
+    left: -2px;
+    width: 100%;
+}
+
+.btn .line-right {
+    top: -110%;
+    right: -2px;
+    height: 0px;
+    width: 2px;
+}
+.btn:hover .line-right {
+    top: -2px;
+    height: 100%;
+}
+
+
+.btn .line-bottom {
+    right:-90%;
+    bottom: -2px;
+    width: 0px;
+    height: 2px;  
+}
+
+.btn:hover .line-bottom {
+    right:-2px;
+    width: 100%; 
+}
+
+.btn .line-left{
+    bottom: -110%;
+    left: -2px;
+    height: 0px;
+    width: 2px;
+}
+.btn:hover .line-left{
+    bottom: -2px;;
+    height: 100%;
+}
+
+.tip {
+    position: absolute;
+    top: 150px;
+    padding: 0 14px;
+    height: 35px;
+    width: 150px;
+    line-height: 35px;
+    background: #2DCB70;
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: none;
+    border-radius: 3px;
+    /*opacity: 0;*/
+    
+}
+.tip em {
+    font-style: normal;
+}
+
+.tip span {
+    position: absolute;
+    bottom: -17px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 9px solid transparent;
+    border-top-color: #2DCB70;
+    margin-left: -8px;
+    
+}
+
+

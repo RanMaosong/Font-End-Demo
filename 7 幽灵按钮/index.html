@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>幽灵按钮</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li class="link link-mission" >
+                <span class="icon"></span>
+                <a class="btn" href="#" data-title="My mission is clear">
+                    MISSION
+                    <span class="line line-top"></span>
+                    <span class="line line-right"></span>
+                    <span class="line line-bottom"></span>
+                    <span class="line line-left"></span>
+                </a>
+            </li>
+            <li class="link link-play">
+                <span class="icon"></span>
+                <a class="btn"  href="#" data-title="My mission is clear">
+                    MISSION
+                    <span class="line line-top"></span>
+                    <span class="line line-right"></span>
+                    <span class="line line-bottom"></span>
+                    <span class="line line-left"></span>
+                </a>
+            </li>
+            <li class="link link-touch">
+                <span class="icon"></span>
+                <a class="btn" href="#"  data-title="My mission is clear">
+                    MISSION
+                    <span class="line line-top"></span>
+                    <span class="line line-right"></span>
+                    <span class="line line-bottom"></span>
+                    <span class="line line-left"></span>
+                </a>
+            </li>
+            
+        </ul>
+        <div class="tip">
+                 <em>nihao</em>
+                 <span></span>
+        </div>
+        
+    </div>
+
+    <script src="./js/jquery-2.1.1.min.js"></script>
+    <script>
+        $(".btn").hover(function() {
+            var title = $(this).attr("data-title");
+            var $tip = $(".tip");
+
+            $tip.find("em").text(title);
+            var left = $(this).offset().left;
+            //为了居中显示
+            var dis = ($(".tip").outerWidth() - $(this).outerWidth())/2;
+            var l = left - dis;
+            $tip.css({left:l+"px"}).stop(true).animate({opacity:1, top:"180px"}, 300);
+            
+        }, function() {
+            $(".tip").stop(true).animate({opacity:0, top:"150px"}, 300);
+        })
+    </script>
+</body>
+</html>
